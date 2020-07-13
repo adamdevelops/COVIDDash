@@ -1,4 +1,4 @@
-package com.coviddash.backend.twitter4j;
+package com.coviddash.backend.config.twitter4j;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
