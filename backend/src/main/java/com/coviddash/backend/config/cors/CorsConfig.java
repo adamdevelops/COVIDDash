@@ -5,19 +5,13 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class CorsConfig {
-  public WebMvcConfigurer corsConfigurer() {
-    return new WebMvcConfigurer() {
-      @Override
-      public void addCorsMappings(CorsRegistry registry) {
-        registry
-            .addMapping("/**")
-            .allowedMethods("GET")
-            .allowedHeaders("*")
-            .allowedOrigins("https://coviddash-api.herokuapp.com/");
-//            .allowedOrigins("http://localhost:8080");
-
-      }
-    };
+public class CorsConfig implements WebMvcConfigurer {
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry
+        .addMapping("/**")
+        .allowedOrigins("http://localhost:3000")
+//          .allowedOrigins("https://coviddash-api.herokuapp.com/");
+        .allowedMethods("GET");
   }
 }
