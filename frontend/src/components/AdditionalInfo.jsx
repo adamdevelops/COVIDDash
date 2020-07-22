@@ -13,11 +13,11 @@ class AdditionalInfo extends Component {
     return(
       <div id="helpful-info">
         <h1>Helpful Info</h1>
-        <div className="">
+        <div className="helpful-info-items">
           <ul>
-            <li>Cleaning tips</li>
-            <li>Stats</li>
-            <li>Safety</li>
+            <li><a href="">Cleaning tips</a></li>
+            <li><a href="">Stats</a></li>
+            <li><a href="">Safety</a></li>
           </ul>
         </div>
       </div>
