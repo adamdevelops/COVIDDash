@@ -27,7 +27,7 @@ class LatestNews extends Component {
 
     return(
       <div id="latest-news">
-        <h1>Latest News</h1>
+        <h1 className="latest-news-title">Latest News</h1>
         <Carousel>
           {
             this.state.news_stories.map((news) => {
@@ -38,9 +38,11 @@ class LatestNews extends Component {
                     src={`${news.img}`}
                     alt="First slide"
                   />
-                  <Carousel.Caption>
-                    <h3>{news.title}</h3>
-                    <p>{news.description}</p>
+                <Carousel.Caption>
+                  <div className="news-info">
+                    <h3 className="news-title transparent-bkgnd">{news.title}</h3>
+                    <p className="news-description transparent-bkgnd">{news.description}</p>
+                  </div>
                   </Carousel.Caption>
                 </Carousel.Item>
               )

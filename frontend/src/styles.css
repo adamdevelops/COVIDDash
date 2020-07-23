@@ -38,7 +38,12 @@ h1{
 
 #latest-news{
   /* width: 100vw; */
-  height: 400px;
+  height: 500px;
+
+}
+
+.latest-news-title{
+  overflow-y: hidden;
 }
 
 .news-items-carousel{
@@ -47,9 +52,44 @@ h1{
   border: 1px solid black;
 }
 
+
+.carousel{
+  background-color: transparent !important;
+}
+
+.carousel-caption{
+  background-color: transparent !important;
+}
+
+.carousel-indicators{
+  background-color: transparent !important;
+}
+
 .news-img{
   width: 200px;
-  height: 300px;
+  height: 400px;
+}
+
+.news-info{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transparent-bkgnd{
+  background-color: transparent !important;
+}
+
+.news-title{
+  color: #EF233C;
+  opacity: 1;
+  overflow-y: hidden;
+}
+
+.news-description{
+  color: #EF233C
+}
+
+.carousel-indicatators{
+  background-color: transparent;
 }
 
 .left-arrow{
