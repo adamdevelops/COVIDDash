@@ -11,7 +11,13 @@
 
 h1{
   margin: 10px;
+  overflow-y: hidden !important;
 }
+
+.transparent-bkgnd{
+  background-color: transparent !important;
+}
+
 
 .logo{
   font-family: 'Audiowide', cursive;
@@ -37,9 +43,9 @@ h1{
 }
 
 #latest-news{
-  /* width: 100vw; */
+  width: 70vw;
   height: 500px;
-
+  overflow-y: hidden;
 }
 
 .latest-news-title{
@@ -52,12 +58,7 @@ h1{
   border: 1px solid black;
 }
 
-
 .carousel{
-  background-color: transparent !important;
-}
-
-.carousel-caption{
   background-color: transparent !important;
 }
 
@@ -66,30 +67,35 @@ h1{
 }
 
 .news-img{
-  width: 200px;
+  width: 700px;
   height: 400px;
+  display: block;
+  margin-left: 15%;
+  /* margin-right: auto;  */
+}
+
+.carousel-caption{
+  background-color: transparent !important;
+  right: 30% !important;
+  left: 20%;
+  bottom: 0px;
+  height: 160px;
 }
 
 .news-info{
   background-color: rgba(0, 0, 0, 0.5);
+  text-align: left;
 }
 
-.transparent-bkgnd{
-  background-color: transparent !important;
-}
 
 .news-title{
-  color: #EF233C;
+  color: #EDF2F4;
   opacity: 1;
   overflow-y: hidden;
 }
 
 .news-description{
-  color: #EF233C
-}
-
-.carousel-indicatators{
-  background-color: transparent;
+  color: #EDF2F4;
 }
 
 .left-arrow{
@@ -115,8 +121,6 @@ h1{
   border: 1px solid black;
   float: left;
 }
-
-
 
 .helpful-info-items{
   font-size: 1.5rem;
