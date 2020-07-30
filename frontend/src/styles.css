@@ -132,6 +132,54 @@ h1{
   float: left;
 }
 
+.tweet{
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.tweet-profile{
+  width: 200px;
+  height: 60px;
+  display: flex;
+  background-color: white;
+}
+
+.tweet-profile_pic{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.tweet-wrapper{
+  display: flex;
+  height: 50px;
+}
+
+.tweet-username{
+  background-color: white;
+  color: black;
+  display: block;
+}
+
+.tweet-body{
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+
+.tweet-date{
+  margin-left: 10px;
+  background-color: white;
+  color: black;
+}
+
 #local-news{
   width: 30%;
   /* border: 1px solid black; */
