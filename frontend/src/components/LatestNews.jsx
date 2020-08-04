@@ -33,7 +33,7 @@ class LatestNews extends Component {
           {
             this.state.news_stories.map((news) => {
               return(
-                <Carousel.Item>
+                <Carousel.Item key={news.id}>
                   <img
                     className="d-block news-img"
                     src={`${news.img}`}
