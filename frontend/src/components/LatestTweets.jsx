@@ -26,7 +26,7 @@ class LatestTweets extends Component {
             <img className="tweet-profile_pic" src={`${tweet.profile_pic}`}></img>
             <div className="tweet-wrapper">
               <span className="tweet-username">{tweet.username}
-                <span className="tweet-screen">@{tweet.screename}</span>
+                <span className="tweet-screename">@{tweet.screename}</span>
               </span>
             </div>
           </div>
