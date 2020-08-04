@@ -17,6 +17,13 @@ class Header extends Component {
         <div id="logo-area">
           <h1 className="logo">COVID DASH</h1>
         </div>
+        <div id="user-menu" className="menu">
+          <ul className="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Tweets</li>
+          </ul>
+        </div>
       </div>
     );
   }
