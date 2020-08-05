@@ -26,8 +26,8 @@ class LocalNews extends Component {
   }
 
   componentDidMount() {
-    axios.get("/hello").then((response) => {
-      console.log(response.data);
+    axios.get("/api/news").then((response) => {
+      console.log(response);
       this.setState({ local_news: response.data });
     });
   }
