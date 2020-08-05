@@ -1,8 +1,7 @@
 {
-  "name": "coviddash",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
-  "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -22,13 +21,12 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "server": "nodemon server.js",
-    "frontend": "react-scripts start",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
