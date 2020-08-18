@@ -11,7 +11,7 @@ class LatestNews extends Component {
 
     this.state = {
       news_stories: [{id: 1, img: '../news1.png', title: 'First News', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien quam, pretium vitae dolor in, molestie posuere dui.'},
-      {id: 2, img: '../news2.jpg', title: 'Second News', description: 'yo yo gabba gabba'}],
+      {id: 2, img: '../news2.jpg', title: 'How to Protect Yourself & Others | CDC', description: 'Here are some tips to protect tips'}],
     }
 
   }

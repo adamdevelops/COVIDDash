@@ -9,7 +9,9 @@ class LocalNews extends Component {
     super(props);
 
     this.state = {
-      local_news: [],
+      local_news: [
+        {id: 1, title: 'Scientists See Signs of Lasting Immunity to Covid-19, Even After Mild Infections', blurb: 'New research indicates that human immune system cells are storing information about the coronavirus so they can fight it off again.'},
+        {id: 2, title: 'New York Is Positioned to Reopen Schools Safely, Health Experts Say', blurb: 'Transmission, even in New York City, is well below thresholds experts say are safe, but issues like adequate ventilation to combat aerosol spread of the virus remain.'}],
     }
 
     this.getData = this.getData.bind(this);
@@ -25,20 +27,28 @@ class LocalNews extends Component {
     })
   }
 
-  componentDidMount() {
-    axios.get("/api/news").then((response) => {
-      console.log(response);
-      this.setState({ local_news: response.data });
-    });
-  }
+  // componentDidMount() {
+  //   axios.get("/api/news").then((response) => {
+  //     console.log(response);
+  //     this.setState({ local_news: response.data });
+  //   });
+  // }
 
   render(){
     return(
       <div id="local-news">
         <h1>Local News</h1>
-        <div className="">
-          {this.state.local_news}
-        </div>
+          {
+            this.state.local_news.map((news) => {
+              return(
+                <div className="news-item" key={news.id}>
+                  <h3 className="news-title transparent-bkgnd">{news.title}</h3>
+                  <p className="news-description transparent-bkgnd">{news.blurb}</p>
+                </div>
+              )
+            })
+
+          }
       </div>
     );
   }
