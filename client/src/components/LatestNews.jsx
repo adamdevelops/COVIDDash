@@ -10,7 +10,7 @@ class LatestNews extends Component {
     super(props);
 
     this.state = {
-      news_stories: [{id: 1, img: '../news1.png', title: 'First News', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien quam, pretium vitae dolor in, molestie posuere dui.'},
+      news_stories: [{id: 1, img: '../news1.png', title: 'Can convalescent plasma treat coronavirus?', description: 'Phlebotomist Jenee Wilson carries COVID-19 convalescent plasma from a donor at Bloodworks ... press to encourage people who survived Covid-19 to donate plasma to help those who are sick.'},
       {id: 2, img: '../news2.jpg', title: 'How to Protect Yourself & Others | CDC', description: 'Here are some tips to protect tips'}],
     }
 
