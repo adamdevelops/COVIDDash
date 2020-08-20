@@ -3,19 +3,15 @@ const axios = require('axios')
 const app = express()
 const path = require('path')
 
-app.use(express.static("public"));
+app.use(express.static("/api/news"));
 
 if (process.env.NODE_ENV === 'production') {
   console.log('running in production!');
-  app.use(express.static(path.resolve(__dirname,'client', 'build', 'index.html'));
+  app.use(express.static(path.resolve(__dirname,'client', 'build', 'index.html')));
 
   app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, clientPath, 'index.html'));
   });
-
-app.get('/hello', function (req, res) {
-  res.send('Hello World')
-})
 
 app.get('/api/news', function (req, res) {
   let api_response = "";
