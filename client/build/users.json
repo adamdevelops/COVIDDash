@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "News 1",
+    "author": "Bret",
+    "body": "This is a test."
+  },
+  {
+    "id": 2,
+    "title": "News 2",
+    "author": "Adam",
+    "body": "This is a test 2."
+  }
+]

@@ -2,7 +2,17 @@ const express = require('express')
 const axios = require('axios')
 const app = express()
 
+const clientPath = '../../../client/build';
+
 app.use(express.static("public"));
+
+if (process.env.NODE_ENV === 'production') {
+  console.log('running in production!');
+  app.use(express.static(path.join(__dirname, clientPath)));
+
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, clientPath, 'index.html'));
+  });
 
 app.get('/hello', function (req, res) {
   res.send('Hello World')
