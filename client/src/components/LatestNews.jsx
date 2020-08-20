@@ -42,7 +42,7 @@ class LatestNews extends Component {
                 <Carousel.Caption>
                   <div className="news-info">
                     <h3 className="news-title transparent-bkgnd">{news.title}</h3>
-                    <p className="news-description transparent-bkgnd">{news.description}</p>
+                    <p className="latestnews-description transparent-bkgnd">{news.description}</p>
                   </div>
                   </Carousel.Caption>
                 </Carousel.Item>

@@ -42,8 +42,8 @@ class LocalNews extends Component {
             this.state.local_news.map((news) => {
               return(
                 <div className="news-item" key={news.id}>
-                  <h3 className="news-title transparent-bkgnd">{news.title}</h3>
-                  <p className="news-description transparent-bkgnd">{news.blurb}</p>
+                  <h3 className="localnews-title transparent-bkgnd">{news.title}</h3>
+                  <p className="localnews-description transparent-bkgnd">{news.blurb}</p>
                 </div>
               )
             })

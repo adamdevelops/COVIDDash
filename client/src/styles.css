@@ -53,7 +53,7 @@ h1{
   overflow-y: hidden;
 }
 
-.latest-news-title{
+.latestnews-title{
   overflow-y: hidden;
 }
 
@@ -99,7 +99,7 @@ h1{
   overflow-y: hidden;
 }
 
-.news-description{
+.lastest-news-description{
   color: #EDF2F4;
 }
 
@@ -311,7 +311,7 @@ h1{
     font-size: 1.3rem;
   }
 
-  .news-description{
+  .latestnews-description{
     display: none;
     /* color: #EDF2F4;
     font-size: 1rem; */
@@ -327,5 +327,96 @@ h1{
     position: absolute;
     top: 35%;
     right: 0;
+  }
+
+  #helpful-info{
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid black; */
+    float: left;
+  }
+
+  .helpful-info-items{
+    font-size: 1.5rem;
+  }
+
+  #latest-tweets{
+    width: 100%;
+    /* border: 1px solid black; */
+    float: left;
+  }
+
+  .tweet{
+    width: 330px;
+    height: 150px;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .tweet-profile{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    background-color: white;
+  }
+
+  .tweet-profile_pic{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  .tweet-wrapper{
+    display: flex;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .tweet-username{
+    background-color: white;
+    color: black;
+    display: block;
+    font-weight: bold;
+  }
+
+  .tweet-screename{
+    background-color: white;
+    color: black;
+    display: block;
+    font-weight: normal !important;
+  }
+
+  .tweet-body{
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .tweet-date{
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+  }
+
+  #local-news{
+    width: 100%;
+    /* border: 1px solid black; */
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .localnews-title{
+    font-size: 1.3rem;
+
+  }
+
+  .localnews-description{
+    font-size: 1rem;
   }
 }
