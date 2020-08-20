@@ -1,0 +1,28 @@
+#logo-area {
+  width: 100px;
+}
+
+.logo{
+  font-family: 'Audiowide', cursive;
+  font-size: 1.5rem;
+  overflow-y: hidden;
+  margin-bottom: 0 !important;
+  padding-left: 2%;
+  line-height: normal;
+}
+
+#user-menu {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-y: hidden;
+  /* border: 1px solid; */
+}
+
+#user-menu li{
+  display: inline-block;
+  margin: 0 30px 30px 0;
+  font-size: 2rem;
+  /* font-family: 'Audiowide', cursive; */
+}

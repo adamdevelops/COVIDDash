@@ -14,7 +14,7 @@ class Header extends Component {
   render(){
     return(
       <div id="header">
-        <div id="logo-area">
+        <div id="logo-area" className="logo-area">
           <h1 className="logo">COVID DASH</h1>
         </div>
         <div id="user-menu" className="menu">
