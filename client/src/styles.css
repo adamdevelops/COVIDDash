@@ -200,8 +200,11 @@ h1{
   float: left;
 }
 
+.localnews-title{
+  overflow-y: hidden;
+}
 
-
+/* Phone view */
 @media only screen and (max-width : 420px) {
   h1{
     font-size: 1.8rem;
@@ -419,4 +422,52 @@ h1{
   .localnews-description{
     font-size: 1rem;
   }
+}
+
+/* Tablet view */
+@media only screen and (max-width : 800px) {
+
+
+  #user-menu{
+    width:auto;
+  }
+
+  #latest-news{
+    width: 100vw;
+  }
+
+  .carousel-item{
+    overflow-y: hidden;
+  }
+
+  .news-img{
+    width: 100vw;
+    margin-left: 0;
+    overflow-y: hidden;
+  }
+
+  .carousel-caption{
+    right: 10% !important;
+    left: 10% !important;
+    bottom: -2%;
+  }
+
+  #helpful-info{
+    width: 38%;
+  }
+
+  #latest-tweets{
+    width: 60%;
+  }
+
+  #local-news{
+    width: 90%;
+  }
+
+  .news-item{
+    padding-left: 15px;
+  }
+
+
+
 }
