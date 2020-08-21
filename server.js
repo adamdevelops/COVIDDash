@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.resolve(__dirname,'client', 'build', 'index.html')));
 
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, clientPath, 'index.html'));
+    res.sendFile(path.join(__dirname, clientPath, 'index.html')));
   });
 
 app.get('/api/news', function (req, res) {
