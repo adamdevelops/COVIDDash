@@ -12,6 +12,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, clientPath, 'index.html'));
   });
+}
 
 app.get('/api/news', function (req, res) {
   let api_response = "";
