@@ -7,10 +7,10 @@ app.use(express.static("/api/news"));
 
 if (process.env.NODE_ENV === 'production') {
   console.log('running in production!');
-  app.use(express.static(path.resolve(__dirname,'client', 'build', 'index.html')));
+  app.use(express.static('client/build'));
 
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, clientPath, 'index.html'));
+    res.sendFile(path.resolve(__dirname,'client', 'build', 'index.html'));
   });
 }
 
