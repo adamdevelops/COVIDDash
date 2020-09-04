@@ -11,21 +11,21 @@ if (process.env.NODE_ENV === 'production') {
 
   app.get('*', function(req, res) {
     res.sendFile(path.resolve(__dirname,'client', 'build', 'index.html'));
-  });
+  } );
 }
 
 app.get('/api/news', function (req, res) {
   let api_response = "";
 
   try{
-    axios.get('https://coviddash-api.herokuapp.com/api/v1/test',{
+    axios.get('https://coviddash-backend.herokuapp.com/tweets',{
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
         }
     })
     .then(response => {
-    	console.log(response.data.message)
-      api_response = response.data.message;
+    	console.log(response.data)
+      api_response = response.data;
       res.send(api_response);
     })
     .catch(error => {

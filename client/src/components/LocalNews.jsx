@@ -27,12 +27,12 @@ class LocalNews extends Component {
     })
   }
 
-  // componentDidMount() {
-  //   axios.get("/api/news").then((response) => {
-  //     console.log(response);
-  //     this.setState({ local_news: response.data });
-  //   });
-  // }
+  componentDidMount() {
+    axios.get("/api/news").then((response) => {
+      console.log(response);
+      this.setState({ other_news: response.data });
+    });
+  }
 
   render(){
     return(
