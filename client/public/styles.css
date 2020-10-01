@@ -139,7 +139,7 @@ h1{
 
 .tweet{
   width: 400px;
-  height: 180px;
+  height: 150px;
   background-color: white;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -148,7 +148,7 @@ h1{
 }
 
 .tweet-profile{
-  width: 260px;
+  width: 200px;
   height: 60px;
   display: flex;
   background-color: white;
@@ -360,7 +360,7 @@ h1{
   }
 
   .tweet-profile{
-    width: 260px;
+    width: 200px;
     height: 60px;
     display: flex;
     background-color: white;
