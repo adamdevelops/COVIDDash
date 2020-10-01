@@ -22,8 +22,8 @@ class LatestTweets extends Component {
 
   componentDidMount() {
     axios.get("/api/news").then((response) => {
-      console.log(response.data.statuses);
-      this.setState({ tweet_news: response.data.statuses });
+      console.log(response.data);
+      this.setState({ tweet_news: response.data });
     });
   }
 
