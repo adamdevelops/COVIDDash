@@ -13,7 +13,7 @@ class LatestTweets extends Component {
         {id: 1, username:'Twitter API', screename: 'TwitterAPI', profile_pic: '../profile_pic.jpg', test_img: 'https://pbs.twimg.com/profile_images/942858479592554497/BbazLO9L_normal.jpg', body: 'Sample tweet', date:'4:19 PM · Oct 10, 2018'},
         {id: 2, username:'Twitter API', screename: 'TwitterAPI', profile_pic: '../profile_pic.jpg', test_img: 'https://pbs.twimg.com/profile_images/942858479592554497/BbazLO9L_normal.jpg', body: 'Sample tweet', date:'4:19 PM · Oct 10, 2018'}
       ],
-      tweet_news: [],
+      tweet_news: null,
     }
 
     this.renderTweets = this.renderTweets.bind(this);
