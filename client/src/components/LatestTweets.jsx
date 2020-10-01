@@ -32,10 +32,7 @@ class LatestTweets extends Component {
       return(
         <div className="tweet" key={tweet.id}>
           <div className="tweet-profile">
-            <img
-              className="tweet-profile_pic"
-              src={`${tweet.user.profile_image_url_https}`}
-              />
+            <img className="tweet-profile_pic" src={`${tweet.user.profile_image_url_https}`}></img>
             <div className="tweet-wrapper">
               <span className="tweet-username">{tweet.user.name}
                 <span className="tweet-screename">@{tweet.user.name}</span>
